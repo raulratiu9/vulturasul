@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat&family=Roboto&display=swap&family=Fredoka+One&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,18 +7,17 @@
   scroll-behavior: smooth;
 }
 
+/* body {
+    background-color: #f3eaea;
+} */
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Fredoka One', cursive;
   font-weight: 500;
   letter-spacing: 5px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 10%;
 }
 
 p {
@@ -46,9 +45,10 @@ a {
 header {
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 3%;
   padding: 5px 85px;
   transition: 0.6s;
   z-index: 1;
@@ -75,23 +75,24 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 25px;
+    margin: 10% 15px;
 }
 
 nav ul li a {
   padding: 10px 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #000;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
   border-radius: 15px;
   letter-spacing: 2px;
-  transition: 0.6s;
+  transition: .8s;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
   background: linear-gradient(to right, #ff0167, #a43430);
-  color: #fff;
 }
 
 .hamburger {
@@ -177,4 +178,69 @@ nav ul li a:hover {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.clouds {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.c1 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    animation: movingcloud 30s;
+    animation-iteration-count: infinite;
+}
+
+.c2 {
+    animation-delay: 5s;
+}
+
+.c3 {
+    animation-delay: 10s;
+}
+
+.c4 {
+    animation-delay: 15s;
+}
+
+.c5 {
+    animation-delay: 20s;
+}
+
+.c6 {
+    animation-delay: 25s;
+}
+
+@keyframes movingcloud {
+    0% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: scale(5, 5);
+        opacity: 0;
+    }
+}
+
+.text {
+    padding: 20%;
+    font-size: 2rem;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
 }
