@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/26134b2839.js" crossorigin="anonymous"></script>
     <title>Vulturașul</title>
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="Logo ArchiDodd">
+        </a>
         <nav>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo Vulturașul"></a>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line1"></div>
@@ -27,7 +31,27 @@
         </nav>
     </header>
 
-    <div class="clouds">
+    <section id="home">
+        <div class="video-wrap">
+            <video id="video" autoplay muted loop>
+                <source src="img/video.MP4" type="video/mp4">
+            </video>
+            <div class="text">
+                <h1>DISCOVER THE SKY</h1>
+                <h2>like never before</h2>
+            </div>
+            <a class="button" href="#services">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Order Now</a>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+
+<!---  <div class="clouds">
         <img class="c1" src="img/cloud2.png" alt="cloud">
         <img class="c1 c2" src="img/cloud3.png" alt="cloud">
         <img class="c1 c3" src="img/cloud4.jpg" alt="cloud">
@@ -38,6 +62,55 @@
             <h2>like never before</h2>
         </div>
     </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="box box-silver">
+                        <div class="title">
+                            <i class="fas fa-paper-plane silver"></i>
+                            <h2>Basic</h2>
+                        </div>
+                        <div class="price">
+                            <h4 class="silver"><sup>$</sup>250</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="fas fa-clock"> 30 minute</i></li>
+                                <li><i class="fas fa-plane"> Aeronava Robin 2160D</i></li>
+                                <li><i class="fas fa-check"> Manevre acrobatice</i></li>
+                                <li><i class="fas fa-check"> Libertate</i></li>
+                                <li><i class="fas fa-check"> Adrenalină</i></li>
+                            </ul>
+                        </div>
+                        <a href="" class="btn btn-silver">Order Now</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="box">
+                        <div class="title">
+                            <i class="fas fa-plane"></i>
+                            <h2>Premium</h2>
+                        </div>
+                        <div class="price">
+                            <h4><sup>$</sup>2200</h4>
+                        </div>
+                        <div class="option">
+                            <ul>
+                                <li><i class="fas fa-clock"> 6 ore</i></li>
+                                <li><i class="fas fa-plane"> Aeronava Robin 2160D</i></li>
+                                <li><i class="fas fa-check"> Manevre acrobatice</i></li>
+                                <li><i class="fas fa-check"> Libertate</i></li>
+                                <li><i class="fas fa-check"> Adrenalină</i></li>
+                            </ul>
+                        </div>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->  
 
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>

@@ -28,3 +28,7 @@ const navSlide = () => {
 }
 
 navSlide();
+
+/* Video */
+
+document.getElementById('video').play();
