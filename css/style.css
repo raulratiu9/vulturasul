@@ -138,6 +138,7 @@ nav ul li a:hover {
     width: 100%;
   }
   nav ul li a {
+    padding: 0;
     display: block;
     text-align: center;
     width: 100%;
@@ -319,7 +320,7 @@ video {
   }
   .button {
     padding: 5px 10px;
-    top: 80%;
+    top: 100%;
     font-size: 1.5em !important;
     text-align: center;
   }
