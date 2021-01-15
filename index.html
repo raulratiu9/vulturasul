@@ -11,27 +11,73 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            <img class="logo" src="img/logo.png" alt="Logo ArchiDodd">
-        </a>
-        <nav>
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <div class="container">
+        <div class="navbar">
+            <div class="menu">
+                <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo Vulturașul"></a>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <div class="main-container">
+            <div class="main">
+                <section id="home">
+                    <div class="video-wrap">
+                        <video autoplay muted loop>
+                            <source src="img/video.mp4" type="video/mp4" alt="Acrobație în aer realizată de Vulturașul">
+                        </video>
+                        <div class="text">
+                            <h1>DISCOVER THE SKY</h1>
+                            <h2>like never before</h2>
+                        </div>
+                        <a class="button" href="#services" title="Services">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Order Now</a>
+                    </div>
+                </section>
+            </div>
+            <div class="shadow one"></div>
+            <div class="shadow two"></div>
+        </div>
+        <div class="links">
+            <ul>
+                <li class="active">
+                    <a href="#home" style="--i: 0.05s">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="--i: 0.1s">About</a>
+                </li>
+                <li>
+                    <a href="#services" style="--i: 0.15s">Services</a>
+                </li>
+                <li>
+                    <a href="#experiences" style="--i: 0.2s">Experiences</a>
+                </li>
+                <li>
+                    <a href="#contact" style="--i: 0.25s">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <section id="about">
+        <div class="clouds">
+            <img class="c1" src="img/cloud2.png" alt="cloud">
+            <img class="c1 c2" src="img/cloud3.png" alt="cloud">
+            <img class="c1 c3" src="img/cloud4.jpg" alt="cloud">
+            <img class="c1 c4" src="img/cloud5.jpg" alt="cloud">
+            <img class="c1 c5" src="img/cloud1.png" alt="cloud">
+            <div class="text">
+                <h1>DISCOVER THE SKY</h1>
+                <h2>like never before</h2>
+            </div>
+        </div>
+    </section>
 
-    <section id="home">
+    <!--- <section id="home">
         <div class="video-wrap">
             <video id="video" autoplay muted loop>
                 <source src="img/video.mp4" type="video/mp4">
@@ -51,7 +97,7 @@
     </section>
 
 
-<!---  <div class="clouds">
+ <div class="clouds">
         <img class="c1" src="img/cloud2.png" alt="cloud">
         <img class="c1 c2" src="img/cloud3.png" alt="cloud">
         <img class="c1 c3" src="img/cloud4.jpg" alt="cloud">
@@ -111,8 +157,192 @@
             </div>
         </div>
     </section> -->
+    <script src="jquery-2.1.4.min.js"></script>
+    <script>
+        'use strict';
 
-    <script>document.getElementById('video').play();</script>
+        $(document).ready(function () {
+
+
+
+            var width = 100,
+                perfData = window.performance.timing,
+                EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+                time = ((EstimatedTime / 1000) % 50) * 100
+
+
+            // Percentage Increment Animation
+            var PercentageID = $(".percentage"),
+                start = 0,
+                end = 100,
+                durataion = time;
+            animateValue(PercentageID, start, end, durataion);
+
+            function animateValue(id, start, end, duration) {
+
+                var range = end - start,
+                    current = start,
+                    increment = end > start ? 1 : -1,
+                    stepTime = Math.abs(Math.floor(duration / range)),
+                    obj = $(id);
+
+
+                var timer = setInterval(function () {
+                    current += increment;
+                    $(obj).text(current);
+                    //obj.innerHTML = current;
+                    if (current == end) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            }
+
+
+
+            setTimeout(function () {
+                $('.preloader').fadeOut();
+
+                $('.cd-transition-layer').addClass('closing').delay(1000).queue(function () {
+                    $(this).removeClass("visible closing opening").dequeue();
+                });
+
+            }, time);
+
+
+
+
+            // FADE OUT EFFECT WHEN CLICK A LINK
+            $(document).on("click", "a:not(.lightbox)", function () {
+                var newUrl = $(this).attr("href");
+                if (!newUrl || newUrl[0] === "#") {
+                    location.hash = newUrl;
+                    return;
+                }
+                $("html").fadeOut(function () {
+                    location = newUrl;
+                });
+                return false;
+            });
+
+
+            var paget = $(".page-title .title").text();
+
+            $(".page-title").append("<span></span>");
+            $(".page-title span").append(paget);
+
+
+
+            //posts page hover 
+            $('.blog-post .blog-link').hover(function () {
+                $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
+                $(this).parent('.blog-post').toggleClass('mousef');
+            });
+
+        });
+
+
+
+
+        $(window).load(function () {
+
+
+            function smokeeffect() {
+                var modalTrigger = $('.nav-icon'),
+                    transitionLayer = $('.cd-transition-layer'),
+                    transitionBackground = transitionLayer.children(),
+                    modalWindow = $('.full-menu');
+
+                var frameProportion = 1.78, //png frame aspect ratio
+                    frames = 25, //number of png frames
+                    resize = false;
+
+                //set transitionBackground dimentions
+                setLayerDimensions();
+                $(window).on('resize', function () {
+                    if (!resize) {
+                        resize = true;
+                        (!window.requestAnimationFrame) ? setTimeout(setLayerDimensions, 300) : window.requestAnimationFrame(setLayerDimensions);
+                    }
+                });
+
+                //open modal window
+                modalTrigger.on('click', function (event) {
+                    event.preventDefault();
+                    transitionLayer.addClass('visible opening');
+                    var delay = ($('.no-cssanimations').length > 0) ? 0 : 600;
+                    setTimeout(function () {
+                        modalWindow.addClass('visible');
+                    }, delay);
+                });
+
+                //close modal window
+                modalWindow.on('click', '.modal-close', function (event) {
+                    event.preventDefault();
+                    transitionLayer.addClass('closing');
+                    modalWindow.removeClass('visible');
+                    transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                        transitionLayer.removeClass('closing opening visible');
+                        transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+                    });
+                });
+
+                function setLayerDimensions() {
+                    var windowWidth = $(window).width(),
+                        windowHeight = $(window).height(),
+                        layerHeight, layerWidth;
+
+                    if (windowWidth / windowHeight > frameProportion) {
+                        layerWidth = windowWidth;
+                        layerHeight = layerWidth / frameProportion;
+                    } else {
+                        layerHeight = windowHeight * 1.2;
+                        layerWidth = layerHeight * frameProportion;
+                    }
+
+                    transitionBackground.css({
+                        'width': layerWidth * frames + 'px',
+                        'height': layerHeight + 'px',
+                    });
+
+                    resize = false;
+                }
+
+            }
+            smokeeffect()
+
+
+
+            /*--------------------------------------------------
+             Hero Section Height
+            ---------------------------------------------------*/
+            function homeh() {
+                var hometext = $('.main')
+
+                hometext.css({
+                    "height": $(window).height() + "px"
+                });
+            }
+            homeh();
+            $(window).resize(homeh);
+
+
+            $(".page-menu li:not(.social) a, .portfolio_filter ul li a").append("<span></span>");
+
+            $('.nav-icon').on("click", function () {
+                $(this).toggleClass('modal-close');
+            });
+
+
+
+        }); // document load end 
+
+
+
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
