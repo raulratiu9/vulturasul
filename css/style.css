@@ -479,6 +479,7 @@ video {
   .shadow,
   .container.active .main {
     left: -100px;
+    transition: .5s;
   }
   .links {
     width: 40%;
