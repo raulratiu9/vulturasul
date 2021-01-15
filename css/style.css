@@ -476,6 +476,13 @@ video {
 }
 
 @media (max-width: 800px) {
+  .shadow,
+  .container.active .main {
+    left: -100px;
+  }
+  .links {
+    width: 40%;
+  }
   .text {
     margin-bottom: 15%;
     font-size: 1.5em;
