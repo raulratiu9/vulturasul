@@ -314,6 +314,9 @@ ul li.active a {
 }
 
 @media (max-width: 600px) {
+  .logo {
+    width: 70%;
+  }
   .links a {
     font-size: 1.2rem;
   }
@@ -479,7 +482,7 @@ video {
   .shadow,
   .container.active .main {
     left: -100px;
-    transition: .5s;
+    transition: 0.5s;
   }
   .links {
     width: 40%;
