@@ -473,6 +473,12 @@ video {
 }
 
 @media (max-width: 500px) {
+  .video-wrap {
+    height: 100vh;
+  }
+  video {
+    height: 100vh;
+  }
   .text {
     margin-bottom: 15%;
     font-size: 1em;
