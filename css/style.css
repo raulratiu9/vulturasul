@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Montserrat&display=swap');
 
 * {
   margin: 0;
@@ -344,6 +344,7 @@ video {
 
 .text {
   margin-bottom: 8%;
+  font-family: 'Capriola', sans-serif;
   font-size: 1.5rem;
   color: #fff;
   -webkit-text-fill-color: transparent;
