@@ -34,12 +34,6 @@ p {
   font-size: 1em;
 }
 
-section {
-  width: 100%;
-  height: auto;
-  z-index: 2;
-}
-
 ul {
   list-style: none;
 }
@@ -538,7 +532,6 @@ video {
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  overflow: hidden;
   background: linear-gradient(145deg, #6ca6c1, #5bc0e8),
     url(../img/bg.jpg) center no-repeat;
 }
@@ -570,15 +563,8 @@ video {
   background-color: #fff !important;
 }
 
-.slide-container {
-  margin: auto;
-  width: 600px;
-  text-align: center;
-}
-
 .wrapper {
   display: flex;
-  overflow: hidden;
 }
 
 .wrapper:focus {
@@ -596,14 +582,12 @@ video {
   -webkit-box-shadow: -1px 15px 30px -12px black;
   box-shadow: -1px 15px 30px -12px black;
   z-index: 9999;
-  overflow: hidden;
 }
 
 .card__image {
   position: relative;
   height: 230px;
   margin-bottom: 35px;
-  overflow: hidden;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
 }
