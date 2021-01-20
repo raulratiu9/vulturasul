@@ -648,7 +648,7 @@ video {
 }
 
 .clash-card__image--dreapta {
-  background: linear-gradient(45deg, #b8b8ff , #fff8e3);
+  background: linear-gradient(45deg, #b8b8ff, #fff8e3);
 }
 
 .clash-card__image--dreapta img {
@@ -794,7 +794,6 @@ video {
 @media (max-width: 800px) {
   .profile {
     width: 100%;
-
   }
 }
 
@@ -871,28 +870,22 @@ video {
 /* Contact */
 
 #contact {
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 80vh;
   background: linear-gradient(90deg, #3e2f5b, #5bc0e8);
 }
 
 .contact-container {
   display: flex;
-  position: relative;
-  min-width: 1100px;
-  min-height: 550px;
-  z-index: 3;
+  justify-content: center;
 }
 
 .contactInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px;
-  position: absolute;
   top: 40px;
   width: 350px;
   height: calc(100% - 80px);
@@ -970,42 +963,27 @@ video {
   opacity: 1;
 }
 
-.contactForm {
-  position: absolute;
-  padding: 10px 50px;
+.form {
+  padding: 15px;
+  width: 50%;
+  height: auto;
+  text-align: center;
   background: #fff;
-  margin-left: 150px;
-  padding-left: 250px;
-  width: calc(100% - 150px);
-  height: 100%;
-  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+  color: #000 !important;
 }
 
-.contactForm h2 {
+.form h3 {
+  margin-bottom: 5%;
   color: #0f3959;
   font-size: 24px;
   font-weight: 500;
 }
 
-.formBox {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
-
 .inputBox {
+  margin: 16px 20px;
+  display: inline-flex;
   position: relative;
-  margin: 0 0 35px 0;
-}
-
-.inputBox.w50 {
-  width: 47%;
-}
-
-.inputBox.w100 {
-  width: 100%;
+  width: 40%;
 }
 
 .inputBox input,
@@ -1087,19 +1065,15 @@ video {
     padding: 10% 0;
     width: 100%;
   }
-  .contactForm {
+  .form {
     position: relative;
     margin: 0;
     padding: 50px;
     width: 100%;
     text-align: center;
   }
-  .formBox .inputBox {
-    display: flex;
-    text-align: center;
-  }
-  .inputBox input {
-    width: 100%;
+  .inputBox {
+    width: 80%;
   }
 }
 

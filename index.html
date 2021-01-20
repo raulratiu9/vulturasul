@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="img/logo.png">
     <script src="https://kit.fontawesome.com/26134b2839.js" crossorigin="anonymous"></script>
     <title>Vulturașul</title>
@@ -110,9 +111,7 @@
 
                 </div>
 
-            </div> <!-- end clash-card barbarian-->
-            <!-- end wrapper -->
-
+            </div>
             <div class="card dreapta">
                 <div class="card__image clash-card__image--dreapta">
                     <img src="img/avionas_dreapta.png" alt="Avion" />
@@ -137,16 +136,7 @@
     </section>
 
     <section id="experiences">
-        <h3>Experiențele noastre</h3>
-        <div class="heading-underline"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, corrupti cupiditate? Ullam tempora sint at,
-            voluptatum reprehenderit nisi porro ipsa magnam quod repellat voluptatem, iusto delectus consequuntur odio
-            minima soluta.</p>
-    </section>
-
-
-   <!---<section id="team">
-        <h3>Echipa</h3>
+        <h3>Echipă</h3>
         <div class="heading-underline"></div>
         <div class="profiles">
             <div class="profile">
@@ -167,8 +157,7 @@
                         accusantium numquam sapiente soluta blanditiis animi expedita veniam?</p>
                 </div>
             </div>
-
-    </section> --> 
+    </section>
 
     <section id="contact">
         <div class="contact-container">
@@ -195,8 +184,39 @@
                     </ul>
                 </div>
             </div>
-            <div class="contactForm">
-                <h2>Trimite un mesaj</h2>
+            <div class="form">
+                <div class="responsive">
+                    <h3>Trimite un mesaj</h3>
+                    <form action="" method="post">
+                        <div class="inputBox">
+                            <input type="text" name="nume" required>
+                            <label for="nume">Nume</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="prenume" required>
+                            <label for="prenume">Prenume</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="mail" required>
+                            <label for="mail">E-mail</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="phone" required>
+                            <label for="phone">Telefon</label>
+                        </div>
+                        <div class="inputBox ">
+                            <textarea name="message" required></textarea>
+                            <label for="message">Mesaj</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="submit" value="Trimite">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--
                 <div class="formBox">
                     <form action="" method="post">
                         <div class="inputBox w50">
@@ -227,7 +247,7 @@
             </div>
         </div>
     </section>
-
+-->
     <footer>
         <p>Copyright &copy; 2021 Vulturașul. Toate drepturile sunt rezervate.</p>
     </footer>
@@ -235,13 +255,14 @@
     <script>
         //Navigation Header//
         const hamburger_menu = document.querySelector(".hamburger-menu");
-
         const container = document.querySelector(".container");
-
         hamburger_menu.addEventListener("click", () => {
             container.classList.toggle("active");
         })
+
+        AOS.init();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
