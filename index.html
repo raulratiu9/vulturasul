@@ -66,7 +66,8 @@
         </div>
     </div>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+        data-aos-offset="100">
         <h3>Despre noi</h3>
         <div class="heading-underline"></div>
         <p>DTO VULTURASUL este primul DTO inregistrat in Romania</p>
@@ -89,7 +90,8 @@
         <h3>Servicii</h3>
         <div class="heading-underline"></div>
         <div class="wrapper">
-            <div class="card stanga">
+            <div class="card stanga" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="2000" data-aos-offset="200">
                 <div class="card__image clash-card__image--stanga">
                     <img src="img/avionas_stanga.png" alt="Avion" />
                 </div>
@@ -112,7 +114,8 @@
                 </div>
 
             </div>
-            <div class="card dreapta">
+            <div class="card dreapta" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="2000" data-aos-offset="200">
                 <div class="card__image clash-card__image--dreapta">
                     <img src="img/avionas_dreapta.png" alt="Avion" />
                 </div>
@@ -138,7 +141,8 @@
     <section id="team">
         <h3>Echipă</h3>
         <div class="heading-underline"></div>
-        <div class="profiles">
+        <div class="profiles" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+            data-aos-offset="200">
             <div class="profile">
                 <div class="picture">
                     <img src="img/profile.png" alt="Profil">
@@ -174,7 +178,8 @@
 
     <section id="contact">
         <div class="contact-container">
-            <div class="contactInfo">
+            <div class="contactInfo" data-aos="fade-right" data-aos-anchor-placement="top-bottom"
+                data-aos-duration="2000" data-aos-offset="200">
                 <div class="responsive">
                     <h3>Contact Info</h3>
                     <ul class="info">
@@ -197,7 +202,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="form">
+            <div class="form" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
+                data-aos-offset="200">
                 <div class="responsive">
                     <h3>Trimite un mesaj</h3>
                     <form action="" method="post">
@@ -229,38 +235,7 @@
             </div>
         </div>
     </section>
-    <!--
-                <div class="formBox">
-                    <form action="" method="post">
-                        <div class="inputBox w50">
-                            <input type="text" name="nume" required>
-                            <label for="nume">Nume</label>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" name="prenume" required>
-                            <label for="prenume">Prenume</label>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" name="mail" required>
-                            <label for="mail">E-mail</label>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="text" name="phone" required>
-                            <label for="phone">Telefon</label>
-                        </div>
-                        <div class="inputBox w100">
-                            <textarea name="message" required></textarea>
-                            <label for="message">Mesaj</label>
-                        </div>
-                        <div class="inputBox w50">
-                            <input type="submit" name="submit" value="Trimite">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
--->
+
     <footer>
         <p>Copyright &copy; 2021 Vulturașul. Toate drepturile sunt rezervate.</p>
     </footer>
@@ -272,10 +247,11 @@
         hamburger_menu.addEventListener("click", () => {
             container.classList.toggle("active");
         })
-
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
         AOS.init();
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
