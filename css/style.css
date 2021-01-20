@@ -744,14 +744,14 @@ video {
   }
 }
 
-/* Experiences */
+/* Team */
 
-#experiences {
+#team {
   padding: 100px;
   position: relative;
 }
 
-#experiences::before {
+#team::before {
   content: "";
   position: absolute;
   left: 0;
@@ -763,15 +763,10 @@ video {
   background-size: cover;
 }
 
-/* Team */
-
-#team {
-  background: linear-gradient(90deg, #3e2f5b, #5bc0e8);
-}
-
 .profiles {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .profile {
