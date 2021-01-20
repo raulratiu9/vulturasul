@@ -593,18 +593,19 @@ video {
 }
 
 .clash-card__image--stanga img {
-  animation: up-down 3s linear infinite;
+  animation: up-down 3s ease;
   position: absolute;
-  animation-delay: 3s;
+  animation-delay: 5s;
   top: -70px;
+  transform: rotate(-20deg);
 }
 
 .clash-card__image--dreapta img {
   position: absolute;
   top: -90px;
-  animation: loop 5s ease-in-out infinite;
-  animation-delay: 3s;
-  transform: rotate(-360deg);
+  animation: loop 5s ease;
+  animation-delay: 5s;
+  transform: rotate(-180deg);
 }
 
 @keyframes up-down {
@@ -633,7 +634,7 @@ video {
     transform: rotate(360deg);
   }
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(-180deg);
   }
 }
 
