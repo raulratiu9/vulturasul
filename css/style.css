@@ -859,7 +859,10 @@ video {
   bottom: -100px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
+  .profiles {
+    flex-direction: column;
+  }
   .profile {
     width: 100%;
   }
@@ -1106,7 +1109,7 @@ video {
   background: #ff568c;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   #contact {
     display: block;
     width: 100%;
