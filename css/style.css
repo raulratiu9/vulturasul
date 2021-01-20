@@ -750,7 +750,7 @@ video {
   margin-top: 150px;
 }
 
-#team::before {
+/* #team::before {
   content: "";
   position: absolute;
   left: 0;
@@ -760,7 +760,7 @@ video {
   background: url(../img/wave-large-reversed.png) center no-repeat,
     linear-gradient(90deg, #3e2f5b, #5bc0e8);
   background-size: cover;
-}
+} */
 
 .profiles {
   display: flex;
