@@ -964,7 +964,7 @@ video {
 }
 
 .form {
-  padding: 15px;
+  padding: 40px;
   width: 50%;
   height: auto;
   text-align: center;
@@ -1067,7 +1067,6 @@ video {
   }
   .form {
     position: relative;
-    background: #fff;
     margin: 0;
     padding: 50px;
     width: 100%;
