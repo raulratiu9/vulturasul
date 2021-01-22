@@ -486,33 +486,30 @@ video {
 }
 
 .clash-card__image--stanga img {
-  animation: up-down 3s ease;
   position: absolute;
-  animation-delay: 5s;
   top: -70px;
+  animation: up-down 3s ease-in-out;
+  animation-delay: 5s;
   transform: rotate(-20deg);
 }
 
 .clash-card__image--dreapta img {
   position: absolute;
   top: -90px;
-  animation: loop 5s ease;
+  animation: loop 3s ease-in-out;
   animation-delay: 5s;
   transform: rotate(-180deg);
 }
 
 @keyframes up-down {
   0% {
-    top: 0;
+    top: -70px;
   }
-  25% {
-    top: -75px;
+  30% {
+    top: -140px;
   }
-  50% {
-    top: -190px;
-  }
-  75% {
-    top: -110px;
+  70% {
+    top: 5px;
   }
   100% {
     top: -70px;
@@ -536,7 +533,6 @@ video {
 }
 
 .clash-card__image--stanga img {
-  width: 110%;
   position: absolute;
   left: -15px;
 }
@@ -546,7 +542,6 @@ video {
 }
 
 .clash-card__image--dreapta img {
-  width: 100%;
   position: absolute;
   top: -20px;
   left: -3px;
