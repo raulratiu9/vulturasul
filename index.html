@@ -25,7 +25,8 @@
                 <section id="home">
                     <div class="video-wrap">
                         <video autoplay muted loop>
-                            <source src="img/video.mp4" type="video/mp4" alt="Acrobație în aer realizată de Vulturașul">
+                            <source src="img/video.mp4" type="video/mp4"
+                                title="Acrobație în aer realizată de Vulturașul">
                         </video>
                         <div class="text">
                             <h1>DESCOPERĂ CERUL </h1>
@@ -104,9 +105,7 @@
                         <div class="stat">2200<sup> &#8364;</sup></div>
                         <div class="stat-value"><i class="fas fa-coins"></i></div>
                     </div>
-
                 </div>
-
             </div>
             <div class="card dreapta" data-aos="zoom-in-right" data-aos-anchor-placement="top-bottom"
                 data-aos-duration="2000" data-aos-offset="200">
@@ -129,8 +128,9 @@
                         <div class="stat">250<sup> &#8364;</sup></div>
                         <div class="stat-value"><i class="fas fa-coins"></i></div>
                     </div>
-
                 </div>
+            </div>
+        </div>
     </section>
 
     <section id="team">
@@ -199,26 +199,26 @@
             <div class="form" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="200">
                 <div class="responsive">
                     <h3>Trimite un mesaj</h3>
-                    <form action="" method="post">
+                    <form action="#" method="post">
                         <div class="inputBox">
-                            <input type="text" name="nume" required>
+                            <input type="text" name="nume" id="nume" required>
                             <label for="nume">Nume</label>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="prenume" required>
+                            <input type="text" name="prenume" id="prenume" required>
                             <label for="prenume">Prenume</label>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="mail" required>
+                            <input type="text" name="mail" id="mail" required>
                             <label for="mail">E-mail</label>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="phone" required>
-                            <label for="phone">Telefon</label>
+                            <input type="text" name="telefon" id="telefon" required>
+                            <label for="telefon">Telefon</label>
                         </div>
                         <div class="inputBox ">
-                            <textarea name="message" required></textarea>
-                            <label for="message">Mesaj</label>
+                            <textarea name="mesaj" id="mesaj" required></textarea>
+                            <label for="mesaj">Mesaj</label>
                         </div>
                         <div class="inputBox">
                             <input type="submit" name="submit" value="Trimite">
