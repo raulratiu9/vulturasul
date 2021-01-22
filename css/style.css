@@ -408,7 +408,7 @@ video {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   #about:before {
     left: 0;
     height: 70%;
