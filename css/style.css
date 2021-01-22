@@ -1033,5 +1033,6 @@ footer p {
 @media (max-width: 500px) {
   footer p {
     margin-top: 25%;
+    padding: 25px;
   }
 }
