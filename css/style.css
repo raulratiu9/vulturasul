@@ -642,14 +642,14 @@ video {
   }
 }
 
-/* Team */
+/* Experiences */
 
-#team {
+#experiences {
   position: relative;
   padding: 150px;
 }
 
-#team::before {
+#experiences::before {
   content: "";
   position: absolute;
   left: 0;
@@ -663,29 +663,37 @@ video {
 
 .swiper-container {
   width: 100% !important;
-  height: 300px !important;
+  height: 500px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-slide {
   background-position: center !important;
   background-size: cover !important;
-  width: 300px !important;
-  height: 300px !important;
+  width: 100% !important;
+  height: 100% !important;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-.swiper-container {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-
+.team {
+  padding-top: 25px;
 }
 
 .profiles {
@@ -814,10 +822,10 @@ video {
 }
 
 @media (max-width: 800px) {
-  #team {
+  #experiences {
     padding: 50px;
   }
-  #team:before {
+  #experiences:before {
     height: 3rem;
   }
   .profiles {

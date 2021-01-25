@@ -52,7 +52,7 @@
                     <a href="#services" style="--i: 0.15s">Servicii</a>
                 </li>
                 <li>
-                    <a href="#team" style="--i: 0.2s">Echipă</a>
+                    <a href="#experiences" style="--i: 0.2s">Experiențe</a>
                 </li>
                 <li>
                     <a href="#contact" style="--i: 0.25s">Contact</a>
@@ -133,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section id="team">
+    <section id="experiences">
         <h3>Experiențe</h3>
         <div class="heading-underline"></div>
         <!-- Slider main container -->
@@ -155,10 +155,10 @@
 
             <!-- If we need navigation buttons -->
         </div>
+        <h3 class="team">Echipă</h3>
+        <div class="heading-underline"></div>
         <div class="profiles" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
             data-aos-offset="200">
-            <h3>Echipă</h3>
-            <div class="heading-underline"></div>
             <div class="profile">
                 <div class="picture">
                     <img src="img/profile.png" alt="Profil">
@@ -264,22 +264,16 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-   var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 50,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/26134b2839.js" crossorigin="anonymous"></script>
