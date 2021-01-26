@@ -61,8 +61,7 @@
         </div>
     </div>
 
-    <section id="about" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
-        data-aos-offset="50">
+    <section id="about" data-aos="fade-up" data-aos-duration="1000">
         <h3>Despre noi</h3>
         <div class="heading-underline"></div>
         <p>DTO VULTURASUL este primul DTO inregistrat in Romania</p>
@@ -137,8 +136,8 @@
         <h3>Experiențe</h3>
         <div class="heading-underline"></div>
         <!-- Slider main container -->
-        <div class="swiper-container" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"
-        data-aos-offset="200">
+        <div class="swiper-container" data-aos="fade-down" data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000" data-aos-offset="200">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(images/1.jpg)"></div>
@@ -149,7 +148,7 @@
                 <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(images/7.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(images/8.jpg)"></div>
-              </div>
+            </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
@@ -267,12 +266,20 @@
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             slidesPerView: 1,
-            spaceBetween: 50,
+            spaceBetween: 20,
             mousewheel: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
+            1000: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            }
         });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

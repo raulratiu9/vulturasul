@@ -301,6 +301,7 @@ ul li.active a {
   .shadow,
   .container.active .main {
     left: -100px;
+    height: 100vh;
     transition: 0.5s;
   }
   .links {
@@ -824,6 +825,18 @@ video {
 .social li a:hover {
   color: #1785eb;
   background: #f7ff5ec;
+}
+
+@media (max-width: 1000px) {
+  .swiper-container {
+    height: 200px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-container {
+    height: 150px !important;
+  }
 }
 
 @media (max-width: 800px) {
