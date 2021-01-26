@@ -1,4 +1,4 @@
-# Vulturasul
+# vulturasul
 
 First website for a real company - a landing page for Vulturașul - flight school company from Constanța, Romania
 
