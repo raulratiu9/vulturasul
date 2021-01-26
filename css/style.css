@@ -500,7 +500,7 @@ video {
   position: absolute;
   top: -70px;
   animation: up-down 3s ease-in-out;
-  animation-delay: 5s;
+  animation-delay: 3s;
   transform: rotate(-20deg);
 }
 
@@ -508,7 +508,7 @@ video {
   position: absolute;
   top: -90px;
   animation: loop 3s ease-in-out;
-  animation-delay: 5s;
+  animation-delay: 3s;
   transform: rotate(-180deg);
 }
 
